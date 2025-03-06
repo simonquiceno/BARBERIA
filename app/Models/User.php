@@ -57,4 +57,11 @@ class User extends Authenticatable
             ->map(fn (string $name) => Str::of($name)->substr(0, 1))
             ->implode('');
     }
+
+     
+      // Relación Many-to-Many con el modelo Role.
+    // public function roles()
+    // {
+    //     return $this->belongsToMany(Role::class);
+    // }
 }
